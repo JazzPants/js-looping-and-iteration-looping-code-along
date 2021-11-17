@@ -5,12 +5,13 @@
 function writeCards(arr, occasion) {
     let result = [];
     for (let i=0; i <  arr.length; i++) {
-        result[i]= `Thank you, ${arr[i]}, for the wonderful ${occasion} gift!`;
+        //result[i]= `Thank you, ${arr[i]}, for the wonderful ${occasion} gift!`;
+        result.push(`Thank you, ${arr[i]}, for the wonderful ${occasion} gift!`);
     }
     return result;
 }
 
-//More dynamic solution
+//More dynamic and less destructive solution, use push to not overwrite existing entries
 /*
 function writeCards( namesArray, event ) {
   let thankYouCards = []
@@ -21,7 +22,7 @@ function writeCards( namesArray, event ) {
 }
 */
 
-let arr = ["Lisa", "Emily", "Steve"]
+let arr = ["Lisa", "Emily", "Steve"];
 
 console.log(writeCards(arr, "christmas"));
 
