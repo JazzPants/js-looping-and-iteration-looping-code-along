@@ -2,10 +2,10 @@
 
 
 
-function writeCards(arr, gift) {
+function writeCards(arr, occasion) {
     let result = [];
     for (let i=0; i <  arr.length; i++) {
-        result[i]= `Thank you, ${arr[i]}, for the wonderful surprise gift!`;
+        result[i]= `Thank you, ${arr[i]}, for the wonderful ${occasion} gift!`;
     }
     return result;
 }
@@ -21,11 +21,9 @@ function writeCards( namesArray, event ) {
 }
 */
 
-
-
 let arr = ["Lisa", "Emily", "Steve"]
 
-console.log(writeCards(arr));
+console.log(writeCards(arr, "christmas"));
 
 
 
@@ -38,6 +36,19 @@ function countDown(x) {
 }
 //let array = [1,2,3,4,5,6,7,8,9,10]; Don't need array for this test!
 countDown(7);
+
+
+//LAB SOLUTION
+/*
+function countDown( startingNumber ) {
+  while ( startingNumber > 0 ) {
+    console.log( startingNumber );
+    startingNumber -= 1;
+  }
+  console.log( startingNumber );
+}
+*/
+
 
 /* for (let countup = 0; countup < 10; countup++) {
     console.log(countup);
